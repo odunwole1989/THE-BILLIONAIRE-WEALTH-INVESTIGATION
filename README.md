@@ -19,7 +19,7 @@ The dataset contains 200 records and 7 columns capturing the world's richest ind
 
 ## SQL Code & Results
 **Numbers of column**
-- SELECT COUNT(*) AS total_columns
+ SELECT COUNT(*) AS total_columns
 - FROM pragma_table_info('billionaires');
   ![](column_image.png)
   
@@ -130,8 +130,8 @@ LIMIT 5;
 - ORDER BY wealth_share_pct DESC;
   ![](question_image12.png)
 
-  13. Single richest billionaire in each industry (Top 5)
--vSELECT 
+  ## 13. Single richest billionaire in each industry (Top 5)
+- SELECT 
    - industry,
    - name AS richest_billionaire,
    - country,
@@ -163,6 +163,8 @@ LIMIT 5;
 - WHERE industry IN ('Technology', 'Fashion & Retail')
 - GROUP BY industry;
 ![](question_image15.png)
+
+[Source](https://www.kaggle.com/datasets/mayankanand2701/top-200-richest-worlds-billionaires-dataset?resource=download)
 
 
 ## Key Insights
